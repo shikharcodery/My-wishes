@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  background-image: url('https://rivercityhouseandhome.com.au/cdn/shop/products/8ft-christmas-tree-tips-1400-snow-effect-rivercity-house-and-home-co-250086_800x.jpg?v=1634795038'); 
+  background-size: cover;
+  background-position: center;
+}
+.hidden {
+  display: none;
+}
+
+#feedback {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.delete-btn {
+  margin-left: 150px;
+  padding: 2px 6px;
+  border: none;
+  background-color: #ff6b6b;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #ff3b3b;
+}
+.item{
+  color:white;
+}
+ 
+.container {
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 1em 0;
+  border-radius: 15px;
+  font-family: 'Poppins';
+  color: red;
+  border: 2px solid transparent;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+.container:hover {
+  border-color: #1F51FF;
+  box-shadow: 0 0 15px #1F51FF;
+}
+
+h1 {
+  font-size: 3em;
+  margin: .25em 0 .75em 0;
+  font-family: 'Caveat';
+}
+
+label, button, input::placeholder {
+    font-family: 'Poppins'
+}
+
+input::placeholder {
+    font-size: .8em;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+    position: relative;
+}
+
+#item-input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover, button:focus {
+  background-color: #218838;
+}
+
+button:active {
+    background-color: #FFC300;
+    color: black;
+}
+
+label {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    align-self: flex-start;
+    margin-left: 1px;background-color: red;
+    padding: 0 5px;
+    /* border: 1px solid; */
+}
+
+#shopping-list {
+  list-style: "🎁 ";
+}
+
+#shopping-list li {
+  margin: 10px 0;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 1.9em;
+  font-family: 'Caveat'
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+    margin: 1em auto;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .input-group {
+    gap: 10px;
+  }
+
+  #item-input {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  #shopping-list li {
+    font-size: 1.5em;
+  }
+
+  .delete-btn {
+    margin-left: auto;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  #item-input {
+    padding: 8px;
+  }
+
+  button {
+    padding: 10px;
+  }
+
+  #shopping-list li {
+    font-size: 1.2em;
+  }
+
+  .delete-btn {
+    padding: 4px 8px;
+  }
+}
